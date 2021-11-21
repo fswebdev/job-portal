@@ -12,8 +12,8 @@ import Card from "react-bootstrap/Card";
       */
 const Users = ({ user }) => {
   return (
-<div>
-  {Array.from({ length: 8 }).map((_, idx) => (
+<div className="box">
+  {Array.from({ length: 1 }).map((_, idx) => (
       <Card>
         <Card.Img variant="top" src={user.Image} width="100" height="160" alt="Candidate potrait" />
         <Card.Body>
