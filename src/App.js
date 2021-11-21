@@ -2,7 +2,7 @@ import React from "react";
 import "./bulma.min.css";
 // import axios from "axios";
 // import "./App.css";
-import Card "react-bootstrap/Card";
+import Card from "react-bootstrap/Card";
 /*<div className="box">
       <p className="subtitle"><img src={user.Image} width="100" height="50" alt="Candidate outlook feature"/></p>
       <p>{user.name}</p>
