@@ -2,12 +2,27 @@ import React from "react";
 import "./bulma.min.css";
 // import axios from "axios";
 // import "./App.css";
-const Users = ({ user }) => {
-  return (
-    <div className="box">
+/*<div className="box">
       <p className="subtitle"><img src={user.Image} width="100" height="50" alt="Candidate outlook feature"/></p>
       <p>{user.name}</p>
-      <p>{user.Id}</p>
+      <p>{user.Id}</p>*/
+const Users = ({ user }) => {
+  return (
+<div>
+Row xs={1} md={2} className="g-8">
+  {Array.from({ length: 8 }).map((_, idx) => (
+    <Col>
+      <Card>
+        <Card.Img variant="top" src={user.Image} width="100" height="160" alt="Candidate potrait" />
+        <Card.Body>
+          <Card.Title>{user.name}</Card.Title>
+          <Card.Text>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </Col>
+  ))}
+</Row>
     </div>
   );
 };
