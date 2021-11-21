@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SearchBar from './SearchBar';
-import CanfidateList from './CandidateList';
+import CandidateList from './CandidateList';
 
 const SearchList = (props) => {
   const [input, setInput] = useState('');
