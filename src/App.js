@@ -3,6 +3,7 @@ import "./bulma.min.css";
 // import axios from "axios";
 // import "./App.css";
 import Card from "react-bootstrap/Card";
+import SearchList from './Components/SearchList.js';
 /*<div className="box">
       <p className="subtitle"><img src={user.Image} width="100" height="50" alt="Candidate outlook feature"/></p>
       <p>{user.name}</p>
@@ -55,6 +56,7 @@ class App extends React.Component {
     return (
       <section className="section">
         <div className="container">
+          <SearchList />
           {!isLoading ? (
             users.map(user => {
               return <Users key={user.name} user={user} />;
