@@ -9,7 +9,7 @@ import "./bulma.min.css";
 const Users = ({ user }) => {
   return (
 <div>
-Row xs={1} md={2} className="g-8">
+<Row xs={1} md={2} className="g-8">
   {Array.from({ length: 8 }).map((_, idx) => (
     <Col>
       <Card>
