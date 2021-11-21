@@ -4,7 +4,7 @@ import CandidateList from './CandidateList';
 
 const SearchList = (props) => {
   const [input, setInput] = useState('');
-  const [candidateListDefault, setCandidateListDefault] = useState();
+ // const [candidateListDefault, setCandidateListDefault] = useState();
   const [candidateList, setCandidateList] = useState();
 
   const fetchData = async () => {
@@ -12,7 +12,7 @@ const SearchList = (props) => {
       .then(response => response.json())
       .then(data => {
          setCandidateList(data) 
-         setCandidateListDefault(data)
+        // setCandidateListDefault(data)
        });}
 
   const updateInput = async (input) => {
