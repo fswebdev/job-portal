@@ -15,7 +15,7 @@ const Users = ({ user }) => {
 <div>
   {Array.from({ length: 1 }).map((_, idx) => (
       <Card className="g-4">
-        <Card.Img variant="top" src="holder.js/100px160"{user.Image} width="100" height="160" alt="Candidate potrait" />
+        <Card.Img variant="top" src={user.Image} width="100" height="160" alt="Candidate potrait" />
         <Card.Body>
           <Card.Title>{user.name}</Card.Title>
           <Card.Text>
